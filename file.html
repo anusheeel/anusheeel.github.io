@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class = "info" >
+    <img id = "photo"
+          >
+    <h3 id = "name"></h3>
+    <p id="bio"></p>
+    <p id="location"></p>
+
+    <p> My <a id="Git" >Github Page</a> </p>
+</div>
+<div class = "repo_table">
+    <p>My Repositary on Github</p>
+    <table border = "1" id = "table">
+        <tr class = "info">
+            <th scope="col">S.N.</th>
+            <th scope="col">Repo Name</th>
+            <th scope="col">Repo URL</th>
+        </tr>>
+        <tr class = "content">
+
+        </tr>
+
+    </table>
+
+</div>
+</body>
+<script>
+fetch("https://api.github.com/users/anusheeel")
+        .then(response => response.json())
+        .then(function(data) {
+        console.log(data)
+        document.getElementById('photo').src = data['avatar_url']
+        document.getElementById('name').textContent = data['name']
+        document.getElementById('bio').textContent = data['bio']
+        document.getElementById('location').textContent = data['location']
+        document.getElementById('Git').href = data['html_url']
+    })
+    fetch("https://api.github.com/users/anusheeel/repos")
+        .then(response => response.json())
+        .then(function(data) {
+        console.log(data)
+        var arraylength = data.length;
+        for (var i=0; i<arraylength; i++){
+        var g = data[i]['name'];
+        var h = data[i]['svn_url'];
+        var row = document.createElement("tr");
+        var node1 = document.createElement("td");
+        var textnode1 = document.createTextNode(i);
+        node1.appendChild(textnode1);
+        var node2 = document.createElement("td");
+        var textnode2 = document.createTextNode(g);
+        node2.appendChild(textnode2);
+        var node3 = document.createElement("td");
+        var textnode3 = document.createTextNode(h);
+        node3.appendChild(textnode3);
+        row.appendChild(node1);
+        row.appendChild(node2);
+        row.appendChild(node3);
+        document.getElementById('table').appendChild(row); }})
+
+
+
+
+</script>
+
+
+
+</html>
