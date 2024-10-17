@@ -1,10 +1,403 @@
-body {
-background-color: #F0FFFF;
+/* General styles */
+.menu-hidden { 
+    display: none; 
 }
 
-.info{
-text-align: center;
+.hero-bg { 
+    background-image: url('https://source.unsplash.com/1600x900/?data,technology'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+/* Section headers */
+.section-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.section-header::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #4299e1, #667eea);
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.section-header:hover::after {
+    width: 100px;
+}
+
+/* Social buttons */
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.github {
+    background-color: #333;
+}
+
+.social-button i {
+    margin-right: 10px;
+}
+
+/* Navigation hover effects */
+nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #4299e1;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Skills hover effects */
+.skills-grid {
+    transition: transform 0.3s ease;
+}
+
+.skills-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Project card styles */
+.project-card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+}
+
+.project-card-container:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-card {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    perspective: 1000px;
+    cursor: pointer;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    min-height: 350px; /* Adjust this value as needed */
+}
 
 
+#canvas {
+    position: absolute; /* Make canvas fill the entire div */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:35%;
+    z-index: -1; /* Place behind all the content of the div */
+    pointer-events: none;
+}
+.neuralNetwork-container {/* Position absolutely within the project card */
+    position:absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1; /* Ensure the animation is behind all the content */
+}
 
+
+.project-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card.flipped .project-card-inner {
+    transform: rotateY(180deg);
+}
+
+.project-card-front, .project-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.project-card-front {
+    background-color: #f0f4f8;
+    color: #2d3748;
+}
+
+.project-card-back {
+    overflow: visible; /* Change from hidden to visible */
+    text-overflow: clip; /* Change from ellipsis to clip */
+    white-space: normal; /* Change from nowrap to normal */
+    font-size: 15px;
+    transform: rotateY(180deg);
+    text-align: left;
+    padding: 1rem; /* Ensure padding is consistent */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+}
+
+/* Add this new class for the animated bars */
+/* Bar container */
+.bar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 500px;
+    height: 150px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    padding: 16px;
+    margin-left: 42px;
+  
+
+}
+
+/* Individual bars */
+.bar {
+    width: 15%; /* Width of each bar */
+    background-color: blue; /* Bar color */
+    opacity: 25%;
+    transition: height 0.3s ease-in-out;
+}
+
+
+/* Button hover effects */
+.custom-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+}
+
+/* Form input focus effects */
+.form-input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+/* About section styles */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+.about-content {
+    flex-grow: 1;
+}
+
+.about-highlights {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.about-highlights li {
+    background-color: #f0f4f8;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-highlights li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-highlights i {
+    margin-right: 0.5rem;
+    color: #4299e1;
+}
+
+/* Typing animation styles */
+.cursor {
+    border-right: 2px solid #000;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Hero section enhancements */
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Shiny text effect */
+.shiny-text {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, #000, #4299e1, #000);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.project-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.project-slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.project-slide.active {
+    opacity: 1;
+    position: relative;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-slide.active .project-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.slider-dot {
+    transition: background-color 0.3s ease;
+}
+
+.slider-dot:hover {
+    background-color: #3182ce;
+}
+
+/* Add Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the font to the body */
+body {
+    font-family: 'Roboto', sans-serif;
 }
