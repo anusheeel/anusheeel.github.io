@@ -1,76 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script data-ad-client="ca-pub-1555196157934815" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta charset="UTF-8">
-    <title>User Profile</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusheel Chapagain | Data Scientist Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class = "info" >
-    <img id = "photo"
-          >
-    <h3 id = "name"></h3>
-    <p id="bio"></p>
-    <p id="location"></p>
+<body id = "whole"class="bg-gray-100 text-gray-900 relative">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Anusheel Chapagain</h1>
+                    <p class="text-gray-600">Engineer</p>
+                </div>
+                <nav>
+                    <a href="#about" class="text-gray-600 hover:text-gray-800 mx-2">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-gray-800 mx-2">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-800 mx-2">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-800 mx-2">Contact</a>
+                </nav>
+                <button id="menu-button" class="block md:hidden text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <p> My <a id="Git" >Github Page</a> </p>
-</div>
-<div class = "repo_table">
-    <p>My Repositary on Github</p>
-    <table border = "1" id = "table">
-        <tr class = "info">
-            <th scope="col">S.N.</th>
-            <th scope="col">Repo Name</th>
-            <th scope="col">Repo URL</th>
-        </tr>>
-        <tr class = "content">
+    <main class="container mx-auto px-6 py-8">
+        <section id="hero" class="hero-bg text-black py-20 rounded-lg mb-12">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-4">
+                    <span class="shiny-text">Welcome Onboard</span>
+                </h1>
+                <p class="text-2xl mb-8">
+                    <span id="typed-text"></span>
+                    <span class="cursor">&nbsp;</span>
+                </p>
+                <a href="#contact" class="custom-button bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Get in Touch</a>
+            </div>
+        </section>
 
-        </tr>
+        <section id="about" class="my-12">
+            <h2 class="section-header">About Me</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300" alt="Anusheel Chapagain" class="rounded-full shadow-lg">
+                </div>
+                <div class="about-content">
+                    <p class="text-gray-600 text-lg mb-4">
+                        Namaste! I'm Anusheel Chapagain, a passionate Data Scientist with a Master's degree in Engineering. My expertise lies in transforming complex data into actionable insights.
+                    </p>
+                    <ul class="about-highlights">
+                        <li><i class="fas fa-graduation-cap"></i> Master's in Engineering</li>
+                        <li><i class="fas fa-chart-line"></i> Expertise in Data Science</li>
+                        <li><i class="fas fa-lightbulb"></i> Innovative Problem Solver</li>
+                        <li><i class="fas fa-code"></i> Skilled in Python and Machine Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    </table>
+        <section id="skills" class="my-12">
+            <h2 class="section-header">Skills</h2>
+            <div class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="skills-grid bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-database text-blue-500 text-2xl mb-2"></i>
+                    <h3 class="font-semibold">ETL Pipelines</h3>
+                </div>
+                <div class="skills-grid bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-code text-blue-500 text-2xl mb-2"></i>
+                    <h3 class="font-semibold">Python automation & scripting</h3>
+                </div>
+                <div class="skills-grid bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-square-root-alt text-blue-500 text-2xl mb-2"></i>
+                    <h3 class="font-semibold">Mathematics</h3>
+                </div>
+                <div class="skills-grid bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-brain text-blue-500 text-2xl mb-2"></i>
+                    <h3 class="font-semibold">Machine Learning Models</h3>
+                </div>
+                <div class="skills-grid bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-project-diagram text-blue-500 text-2xl mb-2"></i>
+                    <h3 class="font-semibold">Data Structures and Algorithms</h3>
+                </div>
+                <div class="skills-grid bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-chart-bar text-blue-500 text-2xl mb-2"></i>
+                    <h3 class="font-semibold">Data Analysis</h3>
+                </div>
+                <div class="skills-grid bg-white p-4 rounded-lg shadow">
+                    <i class="fas fa-chart-pie text-blue-500 text-2xl mb-2"></i>
+                    <h3 class="font-semibold">Data Visualization</h3>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <section id="projects" class="my-12">
+            <h2 class="section-header">Projects</h2>
+            <div class="project-slider">
+                <div class="project-slide active">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Analytics & Automation for Labour Performance Index of West White Rose Project</h3>
+                                        <p class="text-gray-600 mb-4">Design, Testing & Automating cost performance pipeline of multi-billion dollar construction project.</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Task Highlights</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>1).Inspect and publish top best performing and worst performing cost codes for each project activity.</li>
+                                            <li>2).Design Application Program Interface (API) to collect craft & cost related data from different sources.</li>
+                                            <li>3).Automate the report generation of entire cost performance pipeline (20+ reports) using Python </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bar-container">
+                                    <div class="bar" id="bar1"></div>
+                                    <div class="bar" id="bar2"></div>
+                                    <div class="bar" id="bar3"></div>
+                                    <div class="bar" id="bar4"></div>
+                                    <div class="bar" id="bar5"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Designed Machine Learning Model for Labour's Exhaustion and Safety Incident Correlation Analysis</h3>
+                                        <p class="text-gray-600 mb-4">Designed ML model to predict craft exhaustion level to further predict the probable occurrence of incidents, allowing site supervisors to distribute workloads wisely.</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Task Highlights</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>1).Design and developed Application Programming Interface (API) to extract the safety interface data from external sources using Python</li>
+                                            <li>2).Data modelling of the safety dataset for quality statistics.</li>
+                                            <li>3).Design and developed ML model to predict the craft exhaustion level based on their shift types</li>
+                                            <li>4).Design and developed prediction model to generate lookahead report for most vulnerable craft person to safety incidents based on their exhaustion level</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="neuralNetwork-container">
+                                    <canvas id="canvas"></canvas>
+                                    <script src="neuralNetwork.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Time Series Forecasting for Hourly Craft Cost Price</h3>
+                                        <p class="text-gray-600 mb-4">Performed quarterly forecast of Cost Codes activities using ARIMA and LSTM models to Estimate to Complete Cost with high accuracy.</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Task Highlight</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>Detail 1</li>
+                                            <li>Detail 2</li>
+                                            <li>Detail 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Developed microservice application for Turnover documentation tracking system</h3>
+                                        <p class="text-gray-600 mb-4">Using quickbase, a cloud database platform a dynamic dashboard was made live for senior leadership team to track more than 50,000 engineering, commissioning and quality documents of a multi-billion dollar concrete gravity structure construction project.</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Project Details</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>Detail 1</li>
+                                            <li>Detail 2</li>
+                                            <li>Detail 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                                        <p class="text-gray-600 mb-4">Project description</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Project Details</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>Detail 1</li>
+                                            <li>Detail 2</li>
+                                            <li>Detail 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                                        <p class="text-gray-600 mb-4">Project description</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Project Details</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>Detail 1</li>
+                                            <li>Detail 2</li>
+                                            <li>Detail 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                                        <p class="text-gray-600 mb-4">Project description</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Project Details</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>Detail 1</li>
+                                            <li>Detail 2</li>
+                                            <li>Detail 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-container">
+                            <div class="project-card" onclick="flipCard(this)">
+                                <div class="project-card-inner">
+                                    <div class="project-card-front">
+                                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+                                        <p class="text-gray-600 mb-4">Project description</p>
+                                    </div>
+                                    <div class="project-card-back">
+                                        <h3 class="text-xl font-semibold mb-2">Project Details</h3>
+                                        <ul class="text-gray-600 mb-4">
+                                            <li>Detail 1</li>
+                                            <li>Detail 2</li>
+                                            <li>Detail 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-6">
+                <div id="slider-dots" class="space-x-2"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="my-12">
+            <h2 class="section-header">Contact</h2>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="form-input w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="form-input w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4"></textarea>
+                </div>
+                <button type="submit" class="custom-button px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send</button>
+            </form>
+        </section>
+
+        <section id="social" class="my-12 text-center">
+            <h2 class="section-header">Connect With Me</h2>
+            <div class="mt-6 space-x-4">
+                <a href="https://www.linkedin.com/in/chapagainanusheel/" target="_blank" rel="noopener noreferrer" class="social-button linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/anusheeel" target="_blank" rel="noopener noreferrer" class="social-button github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white shadow mt-12">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p class="text-gray-600">&copy; 2024 Anusheel Chapagain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function updateChart() {
+            ['1', '2', '3','4','5'].forEach(id => {
+                const bar = document.getElementById(`bar${id}`);
+                const height = Math.floor(Math.random() * 120) + 20; // Ensure a minimum height of 20px
+                bar.style.height = `${height}px`;
+            });
+        }
+
+        // Initial update
+        updateChart();
+
+        // Update chart every 2 seconds
+        setInterval(updateChart, 2000);
+        // Add this new function for card flipping
+        function flipCard(card) {
+        card.classList.toggle('flipped');
+    }
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('menu-hidden')) {
+                menu.classList.remove('menu-hidden');
+            } else {
+                menu.classList.add('menu-hidden');
+            }
+        });
+
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+
+        // Typing animation
+        const typedTextSpan = document.querySelector("#typed-text");
+        const textArray = ["Data is the new currency", "Extracting value from data"];
+        const typingDelay = 100;
+        const erasingDelay = 100;
+        const newTextDelay = 2000;
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(type, newTextDelay + 250);
+        }); 
+
+        // Project slider functionality
+        const slider = document.querySelector('.project-slider');
+        const slides = document.querySelectorAll('.project-slide');
+        const dotsContainer = document.getElementById('slider-dots');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function createDots() {
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.classList.add('slider-dot', 'w-3', 'h-3', 'rounded-full', 'bg-gray-300', 'hover:bg-blue-500', 'focus:outline-none');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        function updateDots() {
+            const dots = dotsContainer.querySelectorAll('.slider-dot');
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-blue-500');
+                } else {
+                    dot.classList.remove('bg-blue-500');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        }
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                    // Add a slight delay for each card
+                    slide.querySelectorAll('.project-card').forEach((card, cardIndex) => {
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, cardIndex * 250); // 250ms delay for each card
+                    });
+                } else {
+                    slide.classList.remove('active');
+                    // Reset card styles
+                    slide.querySelectorAll('.project-card').forEach(card => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                    });
+                }
+            });
+            updateDots();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(nextSlide, 10000); // Change slide every 5 seconds
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval);
+        }
+
+        function initializeSlider() {
+            createDots();
+            showSlide(currentSlide);
+            startSlideShow();
+
+            slider.addEventListener('mouseenter', stopSlideShow);
+            slider.addEventListener('mouseleave', startSlideShow);
+        }
+    document.addEventListener("DOMContentLoaded", function() {
+    initializeSlider();
+});
+    </script>
 </body>
-<script>
-fetch("https://api.github.com/users/anusheeel")
-        .then(response => response.json())
-        .then(function(data) {
-        console.log(data)
-        document.getElementById('photo').src = data['avatar_url']
-        document.getElementById('name').textContent = data['name']
-        document.getElementById('bio').textContent = data['bio']
-        document.getElementById('location').textContent = data['location']
-        document.getElementById('Git').href = data['html_url']
-    })
-    fetch("https://api.github.com/users/anusheeel/repos")
-        .then(response => response.json())
-        .then(function(data) {
-        console.log(data)
-        var arraylength = data.length;
-        for (var i=0; i<arraylength; i++){
-        var g = data[i]['name'];
-        var h = data[i]['svn_url'];
-        var row = document.createElement("tr");
-        var node1 = document.createElement("td");
-        var textnode1 = document.createTextNode(i);
-        node1.appendChild(textnode1);
-        var node2 = document.createElement("td");
-        var textnode2 = document.createTextNode(g);
-        node2.appendChild(textnode2);
-        var node3 = document.createElement("td");
-        var textnode3 = document.createTextNode(h);
-        node3.appendChild(textnode3);
-        row.appendChild(node1);
-        row.appendChild(node2);
-        row.appendChild(node3);
-        document.getElementById('table').appendChild(row); }})
-
-
-
-
-</script>
-
-
-
 </html>
