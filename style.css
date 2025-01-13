@@ -126,25 +126,30 @@ nav a:hover::after {
 }
 
 
-#canvas {
-    position: absolute; /* Make canvas fill the entire div */
+#canvas, #dbCanvas {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity:35%;
-    z-index: -1; /* Place behind all the content of the div */
+    opacity: 75%;
+    z-index: 2;
     pointer-events: none;
 }
-.neuralNetwork-container {/* Position absolutely within the project card */
-    position:absolute;
-    top: 100px;
+
+.neuralNetwork-container, .database-container {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    z-index: 1; /* Ensure the animation is behind all the content */
+    height: 100%;
+    z-index: 1;
 }
 
+.project-card-front {
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.9);
+}
 
 .project-card-inner {
     position: relative;
@@ -175,7 +180,15 @@ nav a:hover::after {
 }
 
 .project-card-front {
-    background-color: #f0f4f8;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
     color: #2d3748;
 }
 
@@ -400,4 +413,85 @@ nav a:hover::after {
 /* Apply the font to the body */
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.database-container {
+    position: absolute;
+    top: -65px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dbCanvas {
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+}
+
+/* Add JetBrains Mono font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* Apply the font to the body */
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Update headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+}
+
+/* Update project titles */
+.project-card-front h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+/* Update other text elements */
+p, li, a {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+}
+
+.wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+#waveCanvas {
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+}
+
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.project-card-front a {
+    color: #3b82f6;
+    font-weight: 500;
+}
+
+.project-card-front a:hover {
+    color: #2563eb;
 }
