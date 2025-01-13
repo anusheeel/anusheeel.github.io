@@ -7,6 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
 </head>
 <body id = "whole"class="bg-gray-100 text-gray-900 relative">
     <header class="bg-white shadow">
@@ -124,7 +128,7 @@
                             <div class="project-card">
                                 <div class="neuralNetwork-container">
                                     <canvas id="canvas"></canvas>
-                                    <script src="neuralNetwork.js"></script>
+                                    
                                 </div>
                                 <div class="project-card-inner">
                                     <div class="project-card-front" style="margin-top: 250px; position: relative; z-index: 2;">
@@ -152,7 +156,6 @@
                             <div class="project-card">
                                 <div class="neuralNetwork-container">
                                     <canvas id="canvas2"></canvas>
-                                    <script src="neuralNetwork2.js"></script>
                                 </div>
                                 <div class="project-card-inner">
                                     <div class="project-card-front" style="margin-top: 250px; position: relative; z-index: 2;">
@@ -163,6 +166,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Move all scripts to the bottom of the body -->
+                            <script src="neuralNetwork.js?v=1.1"></script>
+                            <script src="neuralNetwork2.js?v=1.1"></script>
                     </div>
                 </div>
                 <div class="project-slide">
@@ -286,7 +292,7 @@
 
         // Typing animation
         const typedTextSpan = document.querySelector("#typed-text");
-        const textArray = ["Data is the new currency", "Extracting value from data"];
+        const textArray = ["Data is the new currenc", "Enhancing value of data"];
         const typingDelay = 100;
         const erasingDelay = 100;
         const newTextDelay = 2000;
