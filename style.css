@@ -123,6 +123,7 @@ nav a:hover::after {
     transform: translateY(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     min-height: 350px; /* Adjust this value as needed */
+    pointer-events: none;
 }
 
 
@@ -149,6 +150,7 @@ nav a:hover::after {
 .project-card-front {
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.9);
+    pointer-events: auto;
 }
 
 .project-card-inner {
