@@ -1,412 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anusheel Chapagain | Data Scientist Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Anusheel Chapagain</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id = "whole"class="bg-gray-100 text-gray-900 relative">
-    <header class="bg-white shadow">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div>
-                    <h1 class="text-3xl font-bold text-gray-900">Anusheel Chapagain</h1>
-                    <p class="text-gray-600">Engineer</p>
-                </div>
-                <nav>
-                    <a href="#about" class="text-gray-600 hover:text-gray-800 mx-2">About</a>
-                    <a href="#skills" class="text-gray-600 hover:text-gray-800 mx-2">Skills</a>
-                    <a href="#projects" class="text-gray-600 hover:text-gray-800 mx-2">Projects</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-800 mx-2">Contact</a>
-                </nav>
-                <button id="menu-button" class="block md:hidden text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+
+<body>
+    <div class="notepad">
+        <div class="notepad-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="filename">anusheel_chapagain.txt</span>
         </div>
-    </header>
+        <div class="notepad-content">
+            <pre>
+================================================================================
+                            ANUSHEEL CHAPAGAIN
+================================================================================
 
-    <main class="container mx-auto px-6 py-8">
-        <section id="hero" class="hero-bg text-black py-20 rounded-lg mb-12">
-            <div class="container mx-auto text-center">
-                <h1 class="text-5xl font-bold mb-4">
-                    <span class="shiny-text">Welcome Onboard</span>
-                </h1>
-                <p class="text-2xl mb-8">
-                    <span id="typed-text"></span>
-                    <span class="cursor">&nbsp;</span>
-                </p>
-                <a href="#contact" class="custom-button bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Get in Touch</a>
-            </div>
-        </section>
+Title:      Engineer
 
-        <section id="about" class="my-12">
-            <h2 class="section-header">About Me</h2>
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="anusheel-bg-rmeoved.png" alt="Anusheel Chapagain" class="rounded-full shadow-lg">
-                </div>
-                <div class="about-content">
-                    <p class="text-gray-600 text-lg mb-4">
-                        Namaste! I'm Anusheel Chapagain, and I have a knack for problem-solving with my engineering expertise. "I like investing myself working on developing full stack application that can be used to solve complex engineering problems. By leveraging diverse array of engineering tools and principles, I have gathered experience building analytical data services for a multi-billion dollar construction project - West White Rose. I have two years of experience working as a Backend Engineer.Currently, I am building ai powered energy consumption prediction tools with a goal of empowering the energy consumers to be self energy aware and be their own energy advisors.
-                        As a recipient of a graduate engineering degree, my notable work includes designing algorithms for a peer-to-peer energy trade application using smart contracts and blockchain.<a href="https://www.mdpi.com/1996-1073/16/3/1549">Read Research Paper</a>
-                        This webpage summarizes my notable projects. 
-                    </p>
-                    <ul class="about-highlights">
-                        <li><i class="fas fa-graduation-cap"></i> Master's in Engineering</li>
-                        <li><i class="fas fa-chart-line"></i> Expert in Research and Development</li>
-                        <li><i class="fas fa-lightbulb"></i> Full Stack Tools and Technologies</li>
-                        <li><i class="fas fa-code"></i> Product engineering</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+Education:  B.Eng Mechanical Engineering
+            Masters Energy System Engineering
 
-        <section id="skills" class="my-12">
-            <h2 class="section-header">Skills</h2>
-            <div class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="skills-grid bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-database text-blue-500 text-2xl mb-2"></i>
-                    <h3 class="font-semibold">Database orchestration and administration</h3>
-                </div>
-                <div class="skills-grid bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-code text-blue-500 text-2xl mb-2"></i>
-                    <h3 class="font-semibold">Python Automation</h3>
-                </div>
-                <div class="skills-grid bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-square-root-alt text-blue-500 text-2xl mb-2"></i>
-                    <h3 class="font-semibold">Statistics & Mathematics</h3>
-                </div>
-                <div class="skills-grid bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-brain text-blue-500 text-2xl mb-2"></i>
-                    <h3 class="font-semibold">Building Machine Learning Models</h3>
-                </div>
-                <div class="skills-grid bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-project-diagram text-blue-500 text-2xl mb-2"></i>
-                    <h3 class="font-semibold">Data Structures and Algorithms</h3>
-                </div>
-                <div class="skills-grid bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-chart-bar text-blue-500 text-2xl mb-2"></i>
-                    <h3 class="font-semibold">Full stack analytical tool development</h3>
-                </div>
-                <div class="skills-grid bg-white p-4 rounded-lg shadow">
-                    <i class="fas fa-chart-pie text-blue-500 text-2xl mb-2"></i>
-                    <h3 class="font-semibold">Data Science Techniques</h3>
-                </div>
-            </div>
-        </section>
+Location:   Canada
 
-        <section id="projects" class="my-12">
-            <h2 class="section-header">Projects</h2>
-            <div class="project-slider">
-                <div class="project-slide active">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="project-card-container">
-                            <div class="project-card-inner">
-                                <div class="project-card-front">
-                                    <h3 class="text-xl font-semibold mb-2">Full Stack Reporting tool for multi-billion dollar West White Rose Project</h3>
-                                    <p>See more details on <a href = "./anusheel-resume.pdf">Resume</a></p>
-                                </div>
-                                <div class="bar-container">
-                                    <div class="bar" id="bar1"></div>
-                                    <div class="bar" id="bar2"></div>
-                                    <div class="bar" id="bar3"></div>
-                                    <div class="bar" id="bar4"></div>
-                                    <div class="bar" id="bar5"></div>
-                                </div>
-                            </div>
-                        </div>                       
-                        <div class="project-card-container">
-                            <div class="project-card">
-                                <div class="neuralNetwork-container">
-                                    <canvas id="canvas"></canvas>
-                                    
-                                </div>
-                                <div class="project-card-inner">
-                                    <div class="project-card-front" style="margin-top: 250px; position: relative; z-index: 2;">
-                                        <h3 class="text-xl font-semibold mb-2">Machine Learning Model for Labour's Exhaustion and Safety Incident Correlation Analysis</h3>
-                                        <p>See more details on <a href = "./anusheel-resume.pdf">Resume</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card-container">
-                            <div class="project-card">
-                                <div class="database-container">
-                                    <canvas id="dbCanvas"></canvas>
-                                    <script src="databaseAnimation.js"></script>
-                                </div>
-                                <div class="project-card-inner">
-                                    <div class="project-card-front" style="margin-top: 250px; position: relative; z-index: 2;">
-                                        <h3 class="text-xl font-semibold mb-2">Full stack document tracking application using cloud database for construction commissioning documents tracker to assist in tracking 200,000+ turnover documents</h3>
-                                        <p>See more details on <a href = "./anusheel-resume.pdf">Resume</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card-container">
-                            <div class="project-card">
-                                <div class="neuralNetwork-container">
-                                    <canvas id="canvas2"></canvas>
-                                </div>
-                                <div class="project-card-inner">
-                                    <div class="project-card-front" style="margin-top: 250px; position: relative; z-index: 2;">
-                                        <h3 class="text-xl font-semibold mb-2">Full Stack Energy Consumption Prediction Modelling</h3>
-                                        <p>See more details on <a href = "./anusheel-resume.pdf">Resume</a></p>
-                                        <p>Explore more on <a href = "https://github.com/anusheeel/energydemandpredictor">GitHuB</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Move all scripts to the bottom of the body -->
-                            <script src="neuralNetwork.js?v=1.1"></script>
-                            <script src="neuralNetwork2.js?v=1.1"></script>
-                    </div>
-                </div>
-                <div class="project-slide">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="project-card-container">
-                            <div class="project-card">
-                                <div class="project-card-inner">
-                                    <div class="project-card-front">
-                                        <h3 class="text-xl font-semibold mb-2">Real Time Sensor Data Monitoring Application</h3>
-                                        <p>See more details on <a href = "./anusheel-resume.pdf">Resume</a></p>
-                                        <p>Explore more on <a href = "https://github.com/anusheeel/gridwatch">GitHuB</a></p>
-                                    </div>
-                                    <div class="bar-container">
-                                        <div class="bar" id="bar6"></div>
-                                        <div class="bar" id="bar7"></div>
-                                        <div class="bar" id="bar8"></div>
-                                        <div class="bar" id="bar9"></div>
-                                        <div class="bar" id="bar10"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card-container">
-                            <div class="project-card">
-                                <div class="wave-container">
-                                    <canvas id="waveCanvas"></canvas>
-                                    <script src="waveAnimation.js"></script>
-                                </div>
-                                <div class="project-card-inner">
-                                    <div class="project-card-front">
-                                        <h3 class="text-xl font-semibold mb-2">AI-Radio Application</h3>
-                                        <p class="text-gray-600 mb-4">Explore more on <a href="https://github.com/anusheeel/ai-radio">GitHub</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center mt-6">
-                <div id="slider-dots" class="space-x-2"></div>
-            </div>
-        </section>
+Links:      <a href="https://www.linkedin.com/in/chapagainanusheel/" target="_blank">LinkedIn</a>  |  <a href="https://github.com/anusheeel" target="_blank">GitHub</a>  |  <a href="./anusheel-resume.pdf" target="_blank">Resume</a>
 
-        <section id="contact" class="my-12">
-            <h2 class="section-header">Contact</h2>
-            <form class="mt-4">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700">Name</label>
-                    <input type="text" id="name" class="form-input w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700">Email</label>
-                    <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700">Message</label>
-                    <textarea id="message" class="form-input w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4"></textarea>
-                </div>
-                <button type="submit" class="custom-button px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send</button>
-            </form>
-        </section>
+================================================================================
+                               PROJECTS
+================================================================================
 
-        <section id="social" class="my-12 text-center">
-            <h2 class="section-header">Connect With Me</h2>
-            <div class="mt-6 space-x-4">
-                <a href="https://www.linkedin.com/in/chapagainanusheel/" target="_blank" rel="noopener noreferrer" class="social-button linkedin">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/anusheeel" target="_blank" rel="noopener noreferrer" class="social-button github">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-white shadow mt-12">
-        <div class="container mx-auto px-6 py-4 text-center">
-            <p class="text-gray-600">&copy; 2029 Anusheel Chapagain. All rights reserved.</p>
+[1] P2P Energy Trading Algorithm
+    ├── Published research paper on peer-to-peer energy trading
+    ├── Smart contracts and blockchain implementation
+    └── <a href="https://www.mdpi.com/1996-1073/16/3/1549" target="_blank">Read Paper</a>
+
+[2] Energy Intelligence
+    ├── Remote Energy Auditing Tool
+    ├── AI-powered energy consumption prediction
+    └── <a href="https://www.energyintelligence.ai" target="_blank">www.energyintelligence.ai</a>
+
+[3] Prompt Compressor
+    ├── Compresses input prompts into TOON structure
+    ├── Preserves all details while reducing token cost
+    └── <a href="https://www.promptoverflow.app" target="_blank">www.promptoverflow.app</a>
+
+[4] AI Olympics
+    ├── AI Model battlefield for Chess & Rubik's Cube solving
+    ├── <a href="https://www.linkedin.com/posts/chapagainanusheel_mistral-continues-to-surprise-me-just-captured-activity-7413625093311987712-dPbU?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpalakBiMpFz-uYlFYwEa3YKwT9mnLKFpM" target="_blank">Demo: Chess</a>
+    └── <a href="https://www.linkedin.com/posts/chapagainanusheel_tried-building-a-rubick-cube-solver-and-injected-activity-7415203116897492992-zReI?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpalakBiMpFz-uYlFYwEa3YKwT9mnLKFpM" target="_blank">Demo: Rubik's Cube</a>
+
+[5] Music Flow
+    ├── Helping instrumentalists learn music by ear
+    └── <a href="https://www.linkedin.com/posts/chapagainanusheel_working-on-a-small-side-project-and-spending-activity-7413290191425155072-CiMl?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpalakBiMpFz-uYlFYwEa3YKwT9mnLKFpM" target="_blank">Demo Video</a>
+
+================================================================================
+
+Contact:    <a href="mailto:anusheel.chapagain@gmail.com">chapagainanusheel@gmail.com</a>
+
+================================================================================
+            </pre>
         </div>
-    </footer>
-
-    <script>
-        function updateChart() {
-            ['1', '2', '3','4','5'].forEach(id => {
-                const bar = document.getElementById(`bar${id}`);
-                const height = Math.floor(Math.random() * 120) + 20; // Ensure a minimum height of 20px
-                bar.style.height = `${height}px`;
-            });
-            // Update new bars
-            ['6', '7', '8', '9', '10'].forEach(id => {
-                const bar = document.getElementById(`bar${id}`);
-                if (bar) {
-                    const height = Math.floor(Math.random() * 120) + 20;
-                    bar.style.height = `${height}px`;
-                }
-            });
-        }
-
-        // Initial update
-        updateChart();
-
-        // Update chart every 2 seconds
-        setInterval(updateChart, 2000);
-        // Add this new function for card flipping
-        function flipCard(card) {
-        card.classList.toggle('flipped');
-    }
-        document.getElementById('menu-button').addEventListener('click', function() {
-            var menu = document.getElementById('mobile-menu');
-            if (menu.classList.contains('menu-hidden')) {
-                menu.classList.remove('menu-hidden');
-            } else {
-                menu.classList.add('menu-hidden');
-            }
-        });
-
-        document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Form submitted!');
-        });
-
-        // Typing animation
-        const typedTextSpan = document.querySelector("#typed-text");
-        const textArray = ["leveraging full-stack technologies to build engineering tools", "Leveraging machine learning and analytics to create exiciting analytical prediction models."];
-        const typingDelay = 80;
-        const erasingDelay = 5;
-        const newTextDelay = 2000;
-        let textArrayIndex = 0;
-        let charIndex = 0;
-
-        function type() {
-            if (charIndex < textArray[textArrayIndex].length) {
-                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(type, typingDelay);
-            } else {
-                setTimeout(erase, newTextDelay);
-            }
-        }
-
-        function erase() {
-            if (charIndex > 0) {
-                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(erase, erasingDelay);
-            } else {
-                textArrayIndex++;
-                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-                setTimeout(type, typingDelay + 1100);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(type, newTextDelay + 250);
-        }); 
-
-        // Project slider functionality
-        const slider = document.querySelector('.project-slider');
-        const slides = document.querySelectorAll('.project-slide');
-        const dotsContainer = document.getElementById('slider-dots');
-        let currentSlide = 0;
-        let slideInterval;
-
-        function createDots() {
-            slides.forEach((_, index) => {
-                const dot = document.createElement('button');
-                dot.classList.add('slider-dot', 'w-3', 'h-3', 'rounded-full', 'bg-gray-300', 'hover:bg-blue-500', 'focus:outline-none');
-                dot.addEventListener('click', () => goToSlide(index));
-                dotsContainer.appendChild(dot);
-            });
-        }
-
-        function updateDots() {
-            const dots = dotsContainer.querySelectorAll('.slider-dot');
-            dots.forEach((dot, index) => {
-                if (index === currentSlide) {
-                    dot.classList.remove('bg-gray-300');
-                    dot.classList.add('bg-blue-500');
-                } else {
-                    dot.classList.remove('bg-blue-500');
-                    dot.classList.add('bg-gray-300');
-                }
-            });
-        }
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                if (i === index) {
-                    slide.classList.add('active');
-                    // Add a slight delay for each card
-                    slide.querySelectorAll('.project-card').forEach((card, cardIndex) => {
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'translateY(0)';
-                        }, cardIndex * 250); // 250ms delay for each card
-                    });
-                } else {
-                    slide.classList.remove('active');
-                    // Reset card styles
-                    slide.querySelectorAll('.project-card').forEach(card => {
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(20px)';
-                    });
-                }
-            });
-            updateDots();
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            showSlide(currentSlide);
-        }
-
-        function startSlideShow() {
-            slideInterval = setInterval(nextSlide, 10000); // Change slide every 5 seconds
-        }
-
-        function stopSlideShow() {
-            clearInterval(slideInterval);
-        }
-
-        function initializeSlider() {
-            createDots();
-            showSlide(currentSlide);
-            startSlideShow();
-
-            slider.addEventListener('mouseenter', stopSlideShow);
-            slider.addEventListener('mouseleave', startSlideShow);
-        }
-    document.addEventListener("DOMContentLoaded", function() {
-    initializeSlider();
-});
-    </script>
+    </div>
 </body>
+
 </html>
