@@ -43,6 +43,17 @@
                     <span aria-hidden="true">|</span>
                     <a href="anusheel-chapagain-general-resume.pdf" target="_blank">General Résumé (PDF)</a>
                 </nav>
+
+                <dl class="activity-lines">
+                    <div>
+                        <dt>Portfolio visits:</dt>
+                        <dd id="visit-count" aria-live="polite" aria-atomic="true">Loading…</dd>
+                    </div>
+                    <div>
+                        <dt>Résumé downloads:</dt>
+                        <dd id="resume-download-count" aria-live="polite" aria-atomic="true">Loading…</dd>
+                    </div>
+                </dl>
             </header>
 
             <section aria-labelledby="about-heading">
@@ -158,7 +169,8 @@
                 <p class="prompt" aria-hidden="true">$ open anusheel_chapagain_resume.pdf</p>
                 <h2 id="resume-heading">Want the complete background?</h2>
                 <p>The general résumé includes the fuller project context, technical work, education and research behind this portfolio.</p>
-                <a class="button" href="anusheel-chapagain-general-resume.pdf" download>Download general résumé (PDF)</a>
+                <a class="button" href="anusheel-chapagain-general-resume.pdf" data-resume-download download>Download general résumé (PDF)</a>
+                <noscript><p class="analytics-note">Activity counts require JavaScript.</p></noscript>
             </section>
 
             <footer>
@@ -167,6 +179,7 @@
             </footer>
         </div>
     </main>
+    <script src="analytics.js" defer></script>
 </body>
 
 </html>

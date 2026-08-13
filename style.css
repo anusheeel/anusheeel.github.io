@@ -114,6 +114,27 @@ dt,
     align-items: center;
 }
 
+.activity-lines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.activity-lines div {
+    display: flex;
+    gap: 8px;
+}
+
+.activity-lines dd {
+    min-width: 2ch;
+    color: var(--green);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+}
+
 a {
     color: var(--cyan);
     text-decoration-thickness: 1px;
@@ -288,6 +309,12 @@ h2 {
 .resume-callout > p:not(.prompt) {
     max-width: 68ch;
     color: #d8d8d1;
+}
+
+.analytics-note {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 0.75rem;
 }
 
 .prompt {
