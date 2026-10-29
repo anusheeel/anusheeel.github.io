@@ -45,4 +45,4 @@ The former animation scripts remain in the repository but are not loaded by the 
 
 The site remains compatible with the existing GitHub Pages repository-root deployment. All page, asset, and résumé URLs are relative; spread navigation uses fragments, so no routing rewrites are required. Keep `index.html` at the published root with the other static files.
 
-The redesign is currently local on the `codex/magazine-portfolio` branch. No push or deployment is included in this change. Publishing would use the repository’s existing GitHub Pages workflow after the changes are reviewed and integrated into its publishing branch.
+GitHub Pages publishes the root of the `master` branch to [anusheeel.github.io](https://anusheeel.github.io/). Push reviewed changes to `master` to publish an update; no separate build or deployment command is needed.
