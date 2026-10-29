@@ -391,13 +391,11 @@ em {
   width: 65%;
   right: -25px;
   bottom: 48px;
-  mix-blend-mode: multiply;
 }
 .cover-portrait img {
   display: block;
   width: 100%;
   height: auto;
-  filter: grayscale(1) contrast(1.1);
 }
 .cover-caption {
   position: absolute;

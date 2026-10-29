@@ -36,7 +36,7 @@ Each spread has a shareable fragment, such as `#spread-4`. Browser Back and Forw
 - `magazine.js` provides spread navigation, URL/history synchronization, keyboard controls, touch gestures, contents dialog behavior, reading view, and fullscreen controls.
 - `blog/index.html` lists journal entries. `blog/action-based-communication/index.html` contains the existing article with its original body copy. `blog/editorial.css` supplies the matching editorial layout.
 - `anusheel-chapagain-general-resume.pdf` is the linked résumé. The existing `anusheel-resume-old.pdf` is also retained.
-- `anusheel-bg-rmeoved.png` is the original portrait. `assets/favicon.svg` is the portfolio favicon.
+- `anusheel-bg-rmeoved.png` is the original portrait, retained on the profile spread. `assets/anusheel-3d-cover.png` is the transparent, lightly cartoonized 3D-style cover illustration created with the built-in image generation tool. Its final prompt is saved in `assets/anusheel-3d-cover.prompt.txt`. The cover asset is a raster PNG, not a mesh or rotatable model. `assets/favicon.svg` is the portfolio favicon.
 - `analytics.js` retains the existing visit and résumé-download counter integration. The `visit-count`, `resume-download-count`, and `data-resume-download` hooks connect it to the new layout. Tracking writes are limited to `anusheeel.github.io`, so local previews do not increment live totals. Reading totals still uses the existing external counter service; a failed request displays “Unavailable” without affecting the portfolio.
 
 The former animation scripts remain in the repository but are not loaded by the magazine. The site uses system serif and sans-serif fonts and has no external font or JavaScript framework dependency.

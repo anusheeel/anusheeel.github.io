@@ -1,0 +1,12 @@
+Generated with the built-in image generation tool.
+Source reference: ../anusheel-bg-rmeoved.png
+Output: anusheel-3d-cover.png (transparent raster illustration, not a 3D mesh)
+
+Final prompt:
+Use case: style-transfer, identity-preserve.
+Edit target and identity reference: the attached original portrait of Anusheel Chapagain. Create a standalone transparent-background portrait for his magazine cover.
+Change the rendering style decisively into a refined, lightly cartoonized 3D character illustration. It must look like a high-quality sculpted animated character, not a retouched photograph. Use simplified rounded sculptural facial planes, smooth matte clay-like skin WITHOUT pores or photographic skin texture, softly carved eyebrows and beard, thick sculpted locks of wavy black hair rather than thousands of photorealistic strands, and a simplified matte charcoal open-collar shirt. Subtle ambient occlusion, soft studio key light, warm highlights. A premium tasteful adult character render, not a baby/chibi or comic caricature.
+Preserve the recognizable identity from the source: adult male, medium-brown complexion, wide slightly rounded face, dark wavy tousled hairstyle, short full beard and moustache, original nose and lips, dark brown eyes. Keep natural eye size and proportions. Calm approachable closed-mouth expression. Do not make him younger. The original reference is the authority for facial structure.
+Composition: single front-facing head and upper torso, chest-up bust, square image, entire hair silhouette visible, shoulders cut at the bottom canvas edge, minimal transparent margin. No arms or hands visible. Centered camera. Intended to sit in the lower-right corner of an ivory magazine cover behind a large black serif headline.
+Background MUST be genuinely transparent alpha. No white rectangle, checkerboard illustration, ground plane, room, pedestal, props, type, logos, or watermark. Use restrained natural warm colors that complement cream paper and burgundy accents.
+One specific improvement over a photo-like render: prioritize a visibly sculpted 3D illustration with clean stylized materials while preserving identity.
