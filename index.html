@@ -1,185 +1,852 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anusheel Chapagain is an engineer and hands-on builder working across project controls, energy systems, data and software products.">
-    <title>Anusheel Chapagain | Engineer, Data &amp; Product Builder</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <main class="notepad">
-        <div class="notepad-header" aria-hidden="true">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="filename">anusheel_chapagain.txt</span>
-        </div>
-
-        <div class="notepad-content">
-            <header class="hero">
-                <p class="rule" aria-hidden="true">================================================================================</p>
-                <h1>ANUSHEEL CHAPAGAIN</h1>
-                <p class="rule" aria-hidden="true">================================================================================</p>
-
-                <dl class="profile-lines">
-                    <div><dt>Title:</dt><dd>Engineer · Data · Product Development</dd></div>
-                    <div><dt>Education:</dt><dd>BEng Mechanical Engineering · MASc Energy Systems Engineering</dd></div>
-                    <div><dt>Location:</dt><dd>St. John's, NL, Canada</dd></div>
-                </dl>
-
-                <nav class="primary-links" aria-label="Profile links">
-                    <span>Links:</span>
-                    <a href="https://www.linkedin.com/in/chapagainanusheel/" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <span aria-hidden="true">|</span>
-                    <a href="https://github.com/anusheeel" target="_blank" rel="noreferrer">GitHub</a>
-                    <span aria-hidden="true">|</span>
-                    <a href="blog/index.html">Blog</a>
-                    <span aria-hidden="true">|</span>
-                    <a href="anusheel-chapagain-general-resume.pdf" target="_blank">General Résumé (PDF)</a>
-                </nav>
-
-                <dl class="activity-lines">
-                    <div>
-                        <dt>Portfolio visits:</dt>
-                        <dd id="visit-count" aria-live="polite" aria-atomic="true">Loading…</dd>
-                    </div>
-                    <div>
-                        <dt>Résumé downloads:</dt>
-                        <dd id="resume-download-count" aria-live="polite" aria-atomic="true">Loading…</dd>
-                    </div>
-                </dl>
-            </header>
-
-            <section aria-labelledby="about-heading">
-                <h2 id="about-heading"><span aria-hidden="true">// </span>ABOUT</h2>
-                <p class="intro">I am an engineer and hands-on builder with about five years of experience across energy systems, construction project controls, data engineering, mechanical design and early-stage software. My work usually starts with a practical problem: I talk with the people doing the work, understand where the process is breaking down, and build a tool they can actually use.</p>
-            </section>
-
-            <section aria-labelledby="experience-heading">
-                <h2 id="experience-heading"><span aria-hidden="true">// </span>PROFESSIONAL EXPERIENCE</h2>
-
-                <article class="entry">
-                    <div class="entry-heading">
-                        <h3><span class="index">[01]</span> Green Infrastructure Partners</h3>
-                        <p>Project Controls Coordinator · Jun 2025–Present</p>
-                    </div>
-                    <ul class="tree-list">
-                        <li>Build reporting tools and workflows with project controls, equipment, purchasing, HR, finance and field teams</li>
-                        <li>Automated Eastern Kings Wind Power reporting using Python, SQL and Power BI</li>
-                        <li>Created searchable historical cost and budget, equipment, purchasing and workforce-data tools</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <div class="entry-heading">
-                        <h3><span class="index">[02]</span> Energy Intelligence</h3>
-                        <p>Founding Engineer · Nov 2024–Present</p>
-                    </div>
-                    <ul class="tree-list">
-                        <li>Lead product development for a building-energy audit platform used in onboarding and testing with 20+ energy advisors</li>
-                        <li>Built an AWS, Python and XGBoost forecasting pipeline that reached approximately 80% accuracy in project testing</li>
-                        <li>Developed browser-based CAD/GLB tools and mobile-to-web workflows for LiDAR-scanned buildings</li>
-                    </ul>
-                </article>
-
-                <article class="entry">
-                    <div class="entry-heading">
-                        <h3><span class="index">[03]</span> AtkinsRéalis (SDP GP)</h3>
-                        <p>Analytics / Data Engineer · Aug 2023–Jan 2025</p>
-                    </div>
-                    <ul class="tree-list">
-                        <li>Built full-stack reporting for the West White Rose construction project, improving progress-tracking efficiency by 40%</li>
-                        <li>Automated 30,000+ labour-hour records and cut recurring report preparation by 75%</li>
-                        <li>Modelled 200,000+ construction documents and integrated legacy Oracle data with modern web tools</li>
-                    </ul>
-                </article>
-
-                <details class="more-experience">
-                    <summary>Earlier experience</summary>
-                    <div class="earlier-grid">
-                        <article>
-                            <h3>RE/MAX Infinity</h3>
-                            <p>System Analyst · Jan–Aug 2023</p>
-                            <p>Supported agents using kvCORE CRM, portfolio websites, campaigns and advertising data.</p>
-                        </article>
-                        <article>
-                            <h3>EcoBloc (Techstars '22)</h3>
-                            <p>Mechanical Design Engineer · Aug 2022–Feb 2023</p>
-                            <p>Designed and tested a manufacturable enclosure using Fusion 360, FEA and prototypes.</p>
-                        </article>
-                        <article>
-                            <h3>GajjabIT</h3>
-                            <p>Energy Data Engineer · Dec 2019–Nov 2021</p>
-                            <p>Built Python and SQL workflows to study 500,000 household energy-consumption records and forecast demand.</p>
-                        </article>
-                    </div>
-                </details>
-            </section>
-
-            <section aria-labelledby="projects-heading">
-                <h2 id="projects-heading"><span aria-hidden="true">// </span>SELECTED WORK</h2>
-
-                <div class="project-grid">
-                    <article class="project">
-                        <h3><span class="index">[01]</span> P2P Energy Trading</h3>
-                        <p>Co-authored peer-reviewed research on a pricing and matchmaking approach for local peer-to-peer energy trading.</p>
-                        <a href="https://doi.org/10.3390/en16031549" target="_blank" rel="noreferrer">Read the paper →</a>
-                    </article>
-
-                    <article class="project">
-                        <h3><span class="index">[02]</span> Energy Intelligence</h3>
-                        <p>Building capture, energy forecasting, advisor review and customer recommendations in one audit workflow.</p>
-                        <a href="https://www.energyintelligence.ai" target="_blank" rel="noreferrer">Visit Energy Intelligence →</a>
-                    </article>
-
-                    <article class="project">
-                        <h3><span class="index">[03]</span> Published iOS Products</h3>
-                        <p>Three practical products taken from user problem through design, development and App Store release.</p>
-                        <div class="inline-links">
-                            <a href="https://apps.apple.com/us/app/gigready-setlist-planner/id6768506376" target="_blank" rel="noreferrer">GigReady</a>
-                            <a href="https://apps.apple.com/us/app/multi-sound-metronome/id6775084893" target="_blank" rel="noreferrer">Multi Sound</a>
-                            <a href="https://apps.apple.com/us/app/tinyhours/id6771535268" target="_blank" rel="noreferrer">TinyHours</a>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <h3><span class="index">[04]</span> AI Olympics</h3>
-                        <p>An AI-model battlefield for chess and Rubik's Cube problem solving.</p>
-                        <div class="inline-links">
-                            <a href="https://www.linkedin.com/posts/chapagainanusheel_mistral-continues-to-surprise-me-just-captured-activity-7413625093311987712-dPbU" target="_blank" rel="noreferrer">Chess demo</a>
-                            <a href="https://www.linkedin.com/posts/chapagainanusheel_tried-building-a-rubick-cube-solver-and-injected-activity-7415203116897492992-zReI" target="_blank" rel="noreferrer">Cube demo</a>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <h3><span class="index">[05]</span> Music Flow</h3>
-                        <p>A side project exploring how software can help instrumentalists learn music by ear.</p>
-                        <a href="https://www.linkedin.com/posts/chapagainanusheel_working-on-a-small-side-project-and-spending-activity-7413290191425155072-CiMl" target="_blank" rel="noreferrer">Watch the demo →</a>
-                    </article>
-                </div>
-            </section>
-
-            <section class="resume-callout" aria-labelledby="resume-heading">
-                <p class="prompt" aria-hidden="true">$ open anusheel_chapagain_resume.pdf</p>
-                <h2 id="resume-heading">Want the complete background?</h2>
-                <p>The general résumé includes the fuller project context, technical work, education and research behind this portfolio.</p>
-                <a class="button" href="anusheel-chapagain-general-resume.pdf" data-resume-download download>Download general résumé (PDF)</a>
-                <noscript><p class="analytics-note">Activity counts require JavaScript.</p></noscript>
-            </section>
-
-            <footer>
-                <p>Contact: <a href="mailto:chapagainanusheel@gmail.com">chapagainanusheel@gmail.com</a></p>
-                <p>St. John's, Newfoundland and Labrador · Authorized to work in Canada</p>
-            </footer>
-        </div>
-    </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e9e7e2" />
+    <meta
+      name="description"
+      content="The portfolio edition of Anusheel Chapagain: engineering, energy, data and practical software. Explore the work in an interactive digital magazine."
+    />
+    <meta property="og:title" content="Anusheel — The Portfolio Edition" />
+    <meta
+      property="og:description"
+      content="An engineer. A hands-on builder. A portfolio with a point of view."
+    />
+    <meta property="og:type" content="website" />
+    <title>Anusheel — The Portfolio Edition</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="magazine.js" defer></script>
     <script src="analytics.js" defer></script>
-</body>
-
+  </head>
+  <body>
+    <a class="skip-link" href="#magazine">Skip to magazine</a>
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M4 12h15M13 5l7 7-7 7" />
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="6" height="6" />
+        <rect x="14" y="4" width="6" height="6" />
+        <rect x="4" y="14" width="6" height="6" />
+        <rect x="14" y="14" width="6" height="6" />
+      </symbol>
+      <symbol id="i-expand" viewBox="0 0 24 24">
+        <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5" />
+      </symbol>
+      <symbol id="i-book" viewBox="0 0 24 24">
+        <path
+          d="M12 6v15m0-15C9 3 5 3 2 4v15c4-1 7 0 10 2 3-2 6-3 10-2V4c-3-1-7-1-10 2Z"
+        />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m5 5 14 14M5 19 19 5" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4" />
+      </symbol>
+      <symbol id="i-link" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M6 6h12v12" />
+      </symbol>
+    </svg>
+    <header class="site-header">
+      <a
+        class="brand"
+        href="#spread-1"
+        data-first
+        aria-label="Anusheel, return to cover"
+        >a<span>.</span></a
+      >
+      <div class="brand-caption">
+        ANUSHEEL CHAPAGAIN<span>THE PORTFOLIO EDITION</span>
+      </div>
+      <nav class="header-links" aria-label="Main navigation">
+        <a href="blog/index.html"
+          >The journal <span aria-hidden="true">↗</span></a
+        ><a class="header-contact" href="mailto:chapagainanusheel@gmail.com"
+          >Let’s talk <svg class="icon"><use href="#i-arrow" /></svg
+        ></a>
+      </nav>
+    </header>
+    <main id="reader" class="reader">
+      <div class="reader-toolbar">
+        <div class="edition-label">
+          <span class="live-dot"></span>THE BUILDER ISSUE<span
+            class="toolbar-separator"
+            >/</span
+          ><span class="edition-number">VOL. 01</span>
+        </div>
+        <div class="reader-tools">
+          <button id="contents-toggle" class="tool-button" type="button">
+            <svg class="icon"><use href="#i-grid" /></svg><span>Contents</span>
+          </button>
+          <button
+            id="reading-toggle"
+            aria-label="Read as a page"
+            title="Read as a page"
+            class="tool-button"
+            type="button"
+            aria-pressed="false"
+          >
+            <svg class="icon"><use href="#i-book" /></svg
+            ><span data-reading-label>Read as a page</span>
+          </button>
+          <button
+            id="fullscreen-toggle"
+            class="tool-button icon-button"
+            type="button"
+            aria-label="Enter fullscreen"
+            aria-pressed="false"
+          >
+            <svg class="icon"><use href="#i-expand" /></svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="magazine"
+        class="magazine"
+        tabindex="-1"
+        aria-label="Anusheel's portfolio magazine"
+      >
+        <section
+          class="spread is-active"
+          id="spread-1"
+          data-title="Cover & contents"
+          aria-label="Pages 1 and 2: Cover and contents"
+        >
+          <article class="page cover-page">
+            <div class="cover-topline">
+              <span>THE INDEPENDENT PORTFOLIO</span><span>VOL. 01</span>
+            </div>
+            <h1 class="masthead">Anusheel<span>.</span></h1>
+            <div class="cover-disciplines">
+              ENGINEERING <i>·</i> ENERGY <i>·</i> DATA <i>·</i> SOFTWARE
+            </div>
+            <div class="cover-story">
+              <p class="eyebrow red-ink">THE BUILDER ISSUE</p>
+              <h2>Built for<br />the real<br /><em>world.</em></h2>
+              <p>Good work starts with<br />a problem worth solving.</p>
+            </div>
+            <div class="cover-portrait">
+              <img
+                src="anusheel-bg-rmeoved.png"
+                alt="Portrait of Anusheel Chapagain"
+                width="348"
+                height="371"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="cover-caption">
+              <span class="caption-line"></span
+              ><strong>ANUSHEEL<br />CHAPAGAIN</strong
+              ><span>Engineer.<br />Hands-on builder.</span>
+            </div>
+            <div class="cover-bottom">
+              <span>FROM ENERGY SYSTEMS TO EVERYDAY SOFTWARE</span
+              ><svg class="icon"><use href="#i-arrow" /></svg>
+            </div>
+          </article>
+          <article class="page contents-page">
+            <div class="running-head">
+              <span>INSIDE THE EDITION</span><span>ANUSHEEL / 01</span>
+            </div>
+            <p class="eyebrow red-ink contents-kicker">A NOTE TO THE READER</p>
+            <h2 class="contents-title">
+              A portfolio.<br />With a point<br />of <em>view.</em>
+            </h2>
+            <p class="contents-intro">
+              Engineering, data, and software—connected by one idea: build
+              things people can actually use.
+            </p>
+            <nav class="printed-contents" aria-label="Magazine chapters">
+              <a href="#spread-2" data-spread="2"
+                ><span class="contents-num">03</span
+                ><span
+                  ><strong>The person behind the work</strong
+                  ><small>Background, approach &amp; toolkit</small></span
+                ><span class="contents-arrow">↗</span></a
+              >
+              <a href="#spread-3" data-spread="3"
+                ><span class="contents-num">05</span
+                ><span
+                  ><strong>Where the work happens</strong
+                  ><small>Experience &amp; measurable impact</small></span
+                ><span class="contents-arrow">↗</span></a
+              >
+              <a href="#spread-4" data-spread="4"
+                ><span class="contents-num">07</span
+                ><span
+                  ><strong>Ideas, made real</strong
+                  ><small>Selected products &amp; experiments</small></span
+                ><span class="contents-arrow">↗</span></a
+              >
+              <a href="#spread-5" data-spread="5"
+                ><span class="contents-num">09</span
+                ><span
+                  ><strong>A curious mind at work</strong
+                  ><small>Research &amp; the journal</small></span
+                ><span class="contents-arrow">↗</span></a
+              >
+              <a href="#spread-6" data-spread="6"
+                ><span class="contents-num">11</span
+                ><span
+                  ><strong>The next chapter</strong
+                  ><small>Résumé &amp; getting in touch</small></span
+                ><span class="contents-arrow">↗</span></a
+              >
+            </nav>
+            <div class="contents-footer">
+              <span
+                >BASED IN ST. JOHN’S, CANADA<br />OPEN TO A GOOD
+                CONVERSATION.</span
+              ><a
+                class="round-arrow"
+                href="#spread-2"
+                data-spread="2"
+                aria-label="Start reading: the person behind the work"
+                ><svg class="icon"><use href="#i-arrow" /></svg
+              ></a>
+            </div>
+            <div class="page-folio">
+              <span>THE PORTFOLIO EDITION</span><span>02</span>
+            </div>
+          </article>
+        </section>
+        <section
+          class="spread"
+          id="spread-2"
+          data-title="The person behind the work"
+          aria-label="Pages 3 and 4: Profile and approach"
+        >
+          <article class="page profile-page">
+            <div class="running-head">
+              <span>01 / PROFILE</span><span>THE PERSON</span>
+            </div>
+            <p class="eyebrow red-ink">AN ENGINEER’S POINT OF VIEW</p>
+            <h2 class="display-title">
+              It starts with<br />a practical<br /><em>problem.</em>
+            </h2>
+            <p class="dropcap body-copy">
+              I am an engineer and hands-on builder with about five years of
+              experience across energy systems, construction project controls,
+              data engineering, mechanical design and early-stage software.
+            </p>
+            <p class="body-copy">
+              My work usually starts with a practical problem: I talk with the
+              people doing the work, understand where the process is breaking
+              down, and build a tool they can actually use.
+            </p>
+            <div class="profile-signoff">
+              <img
+                src="anusheel-bg-rmeoved.png"
+                alt="Anusheel Chapagain"
+                width="348"
+                height="371"
+                loading="lazy"
+              />
+              <div>
+                <strong>Anusheel Chapagain</strong
+                ><span>Engineer · Data · Product Development</span
+                ><span>St. John’s, Newfoundland and Labrador</span>
+              </div>
+            </div>
+            <div class="page-folio">
+              <span>ANUSHEEL CHAPAGAIN</span><span>03</span>
+            </div>
+          </article>
+          <article class="page approach-page">
+            <div class="running-head">
+              <span>PROFILE / CONTINUED</span><span>THE APPROACH</span>
+            </div>
+            <h2 class="section-title">
+              Engineer by training.<br />Builder by <em>instinct.</em>
+            </h2>
+            <div class="discipline-list">
+              <section>
+                <span class="small-number">01</span>
+                <div>
+                  <h3>Understand the system.</h3>
+                  <p>
+                    Energy systems, mechanical design and the realities of
+                    construction. Start with the context before reaching for a
+                    tool.
+                  </p>
+                  <div class="tool-tags">ENERGY SYSTEMS / FUSION 360 / FEA</div>
+                </div>
+              </section>
+              <section>
+                <span class="small-number">02</span>
+                <div>
+                  <h3>Make the data useful.</h3>
+                  <p>
+                    Turn disconnected records into reporting, forecasts and
+                    searchable tools that support everyday decisions.
+                  </p>
+                  <div class="tool-tags">
+                    PYTHON / SQL / POWER BI / AWS / XGBOOST
+                  </div>
+                </div>
+              </section>
+              <section>
+                <span class="small-number">03</span>
+                <div>
+                  <h3>Build it. Put it to work.</h3>
+                  <p>
+                    From browser-based building tools to published mobile
+                    products, take a practical idea through design, development
+                    and release.
+                  </p>
+                  <div class="tool-tags">
+                    PRODUCT DEVELOPMENT / WEB / MOBILE
+                  </div>
+                </div>
+              </section>
+            </div>
+            <aside class="education-block">
+              <p class="eyebrow red-ink">THE FOUNDATION</p>
+              <p>BEng <strong>Mechanical Engineering</strong></p>
+              <p>MASc <strong>Energy Systems Engineering</strong></p>
+            </aside>
+            <div class="page-folio">
+              <span>THE PORTFOLIO EDITION</span><span>04</span>
+            </div>
+          </article>
+        </section>
+        <section
+          class="spread"
+          id="spread-3"
+          data-title="Where the work happens"
+          aria-label="Pages 5 and 6: Professional experience"
+        >
+          <article class="page experience-page">
+            <div class="running-head">
+              <span>02 / EXPERIENCE</span><span>IN THE FIELD</span>
+            </div>
+            <h2 class="display-title">Where the<br />work <em>happens.</em></h2>
+            <section class="career-entry">
+              <p class="eyebrow red-ink">JUN 2025 — PRESENT</p>
+              <h3>Green Infrastructure<br />Partners</h3>
+              <p class="role">Project Controls Coordinator</p>
+              <p>
+                Build reporting tools and workflows with project controls,
+                equipment, purchasing, HR, finance and field teams.
+              </p>
+              <ul>
+                <li>
+                  Automated Eastern Kings Wind Power reporting with Python, SQL
+                  and Power BI.
+                </li>
+                <li>
+                  Created searchable historical cost, budget, equipment,
+                  purchasing and workforce-data tools.
+                </li>
+              </ul>
+            </section>
+            <section class="career-entry">
+              <p class="eyebrow red-ink">NOV 2024 — PRESENT</p>
+              <h3>Energy Intelligence</h3>
+              <p class="role">Founding Engineer</p>
+              <p>
+                Lead product development for a building-energy audit platform
+                used in onboarding and testing with
+                <strong>20+ energy advisors.</strong>
+              </p>
+              <p>
+                Built an AWS, Python and XGBoost forecasting pipeline reaching
+                approximately 80% accuracy in project testing, alongside browser
+                CAD/GLB tools and mobile-to-web workflows for LiDAR-scanned
+                buildings.
+              </p>
+            </section>
+            <div class="page-folio">
+              <span>ANUSHEEL CHAPAGAIN</span><span>05</span>
+            </div>
+          </article>
+          <article class="page impact-page">
+            <div class="running-head">
+              <span>EXPERIENCE / CONTINUED</span><span>IN THE NUMBERS</span>
+            </div>
+            <section class="career-entry lead-career">
+              <p class="eyebrow red-ink">AUG 2023 — JAN 2025</p>
+              <h3>AtkinsRéalis <span>(SDP GP)</span></h3>
+              <p class="role">Analytics / Data Engineer</p>
+              <p>
+                Full-stack reporting for the West White Rose construction
+                project. Legacy Oracle data connected to modern web tools.
+              </p>
+            </section>
+            <div class="impact-stats">
+              <div>
+                <strong>40<span>%</span></strong>
+                <p>Improvement in<br />progress-tracking efficiency</p>
+              </div>
+              <div>
+                <strong>75<span>%</span></strong>
+                <p>Less recurring<br />report preparation</p>
+              </div>
+            </div>
+            <p class="stat-context">
+              30,000+ labour-hour records automated.<br />200,000+ construction
+              documents modelled.
+            </p>
+            <div class="earlier-experience">
+              <p class="eyebrow">THE CHAPTERS BEFORE</p>
+              <section>
+                <h3>RE/MAX Infinity</h3>
+                <span>System Analyst · Jan–Aug 2023</span>
+                <p>
+                  kvCORE CRM, portfolio websites, campaigns and advertising
+                  data.
+                </p>
+              </section>
+              <section>
+                <h3>EcoBloc <small>(Techstars ’22)</small></h3>
+                <span>Mechanical Design Engineer · Aug 2022–Feb 2023</span>
+                <p>
+                  Manufacturable enclosure design with Fusion 360, FEA and
+                  prototypes.
+                </p>
+              </section>
+              <section>
+                <h3>GajjabIT</h3>
+                <span>Energy Data Engineer · Dec 2019–Nov 2021</span>
+                <p>
+                  Python and SQL analysis of 500,000 household
+                  energy-consumption records and demand forecasting.
+                </p>
+              </section>
+            </div>
+            <div class="page-folio">
+              <span>THE PORTFOLIO EDITION</span><span>06</span>
+            </div>
+          </article>
+        </section>
+        <section
+          class="spread"
+          id="spread-4"
+          data-title="Ideas, made real"
+          aria-label="Pages 7 and 8: Selected products and experiments"
+        >
+          <article class="page projects-page">
+            <div class="running-head">
+              <span>03 / SELECTED WORK</span><span>FROM IDEA TO PRODUCT</span>
+            </div>
+            <h2 class="display-title">Ideas,<br /><em>made real.</em></h2>
+            <div
+              class="building-art"
+              role="img"
+              aria-label="Architectural line drawing representing a building energy model"
+            >
+              <svg
+                viewBox="0 0 500 240"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g stroke="currentColor" stroke-width="1.2">
+                  <path
+                    d="m67 145 176 79 190-100-174-80Z M67 145v-15L259 28l174 79v17M243 224V110M243 110 67 30l192-17 174 79v32M67 30v115M259 13v31M67 30l176 80L433 9M433 9v115M259 13l174-4"
+                  />
+                  <path
+                    d="M111 50v115m44-95v115m44-95v115m88-118v114m47-138v114m49-139v114M67 68l176 80 190-100M67 106l176 80 190-100"
+                    opacity=".42"
+                  />
+                  <path d="m35 167 208 94L465 144" stroke-dasharray="3 4" />
+                </g></svg
+              ><span>BUILDING CAPTURE → ENERGY INSIGHT</span>
+            </div>
+            <section class="project-feature">
+              <p class="eyebrow red-ink">01 / ENERGY INTELLIGENCE</p>
+              <h3>A clearer picture<br />of building energy.</h3>
+              <p>
+                Building capture, energy forecasting, advisor review and
+                customer recommendations, connected in one audit workflow.
+              </p>
+              <a
+                class="editorial-link"
+                href="https://www.energyintelligence.ai"
+                target="_blank"
+                rel="noreferrer"
+                >Explore Energy Intelligence
+                <svg class="icon"><use href="#i-link" /></svg
+              ></a>
+            </section>
+            <div class="page-folio">
+              <span>ANUSHEEL CHAPAGAIN</span><span>07</span>
+            </div>
+          </article>
+          <article class="page experiments-page">
+            <div class="running-head">
+              <span>SELECTED WORK / CONTINUED</span
+              ><span>SMALL TOOLS, REAL USES</span>
+            </div>
+            <section class="product-entry">
+              <p class="eyebrow red-ink">02 / PUBLISHED iOS PRODUCTS</p>
+              <h3>From a user problem<br />to the App Store.</h3>
+              <p>
+                Three practical products taken through design, development and
+                release.
+              </p>
+              <div class="app-links">
+                <a
+                  href="https://apps.apple.com/us/app/gigready-setlist-planner/id6768506376"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><span class="app-mark">G.</span><strong>GigReady</strong
+                  ><span>↗</span></a
+                ><a
+                  href="https://apps.apple.com/us/app/multi-sound-metronome/id6775084893"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><span class="app-mark bars">≋</span
+                  ><strong>Multi Sound</strong><span>↗</span></a
+                ><a
+                  href="https://apps.apple.com/us/app/tinyhours/id6771535268"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><span class="app-mark">th.</span><strong>TinyHours</strong
+                  ><span>↗</span></a
+                >
+              </div>
+            </section>
+            <section class="product-entry">
+              <p class="eyebrow red-ink">03 / AI OLYMPICS</p>
+              <h3>A little competition.<br />A lot to learn.</h3>
+              <p>
+                An AI-model battlefield for chess and Rubik’s Cube problem
+                solving.
+              </p>
+              <div class="text-links">
+                <a
+                  href="https://www.linkedin.com/posts/chapagainanusheel_mistral-continues-to-surprise-me-just-captured-activity-7413625093311987712-dPbU"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Chess demo ↗</a
+                ><a
+                  href="https://www.linkedin.com/posts/chapagainanusheel_tried-building-a-rubick-cube-solver-and-injected-activity-7415203116897492992-zReI"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Cube demo ↗</a
+                >
+              </div>
+            </section>
+            <section class="product-entry music-entry">
+              <p class="eyebrow red-ink">04 / MUSIC FLOW</p>
+              <h3>Learning to listen.</h3>
+              <p>
+                A side project exploring how software can help instrumentalists
+                learn music by ear.
+              </p>
+              <a
+                class="editorial-link"
+                href="https://www.linkedin.com/posts/chapagainanusheel_working-on-a-small-side-project-and-spending-activity-7413290191425155072-CiMl"
+                target="_blank"
+                rel="noreferrer"
+                >Watch the demo <svg class="icon"><use href="#i-link" /></svg
+              ></a>
+            </section>
+            <div class="page-folio">
+              <span>THE PORTFOLIO EDITION</span><span>08</span>
+            </div>
+          </article>
+        </section>
+        <section
+          class="spread"
+          id="spread-5"
+          data-title="A curious mind at work"
+          aria-label="Pages 9 and 10: Research and writing"
+        >
+          <article class="page research-page">
+            <div class="running-head">
+              <span>04 / RESEARCH &amp; IDEAS</span
+              ><span>LOOKING A LITTLE CLOSER</span>
+            </div>
+            <p class="eyebrow red-ink">PEER-REVIEWED RESEARCH</p>
+            <h2 class="display-title">
+              Better energy.<br />From the<br /><em>ground up.</em>
+            </h2>
+            <div
+              class="energy-diagram"
+              role="img"
+              aria-label="Local households connected in a peer-to-peer energy network"
+            >
+              <svg
+                viewBox="0 0 420 180"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M80 68h260M80 68l130 85L340 68M210 153V20"
+                    stroke-dasharray="4 6"
+                    opacity=".5"
+                  />
+                  <circle cx="210" cy="20" r="18" />
+                  <path
+                    d="m213 9-9 12h12l-9 12M55 65l25-22 25 22v30H55ZM315 65l25-22 25 22v30h-50ZM185 150l25-22 25 22v28h-50Z"
+                  />
+                  <path d="M73 95V77h14v18m246 0V77h14v18m-144 83v-18h14v18" />
+                </g></svg
+              ><span>LOCAL GENERATION. SHARED POSSIBILITY.</span>
+            </div>
+            <section class="research-copy">
+              <h3>Peer-to-peer energy trading</h3>
+              <p>
+                Co-authored research on a pricing and matchmaking approach for
+                local peer-to-peer energy trading.
+              </p>
+              <a
+                class="editorial-link"
+                href="https://doi.org/10.3390/en16031549"
+                target="_blank"
+                rel="noreferrer"
+                >Read the published paper
+                <svg class="icon"><use href="#i-link" /></svg></a
+              ><span class="paper-reference"
+                >ENERGIES · DOI: 10.3390/en16031549</span
+              >
+            </section>
+            <div class="page-folio">
+              <span>ANUSHEEL CHAPAGAIN</span><span>09</span>
+            </div>
+          </article>
+          <article class="page journal-page">
+            <div class="running-head">
+              <span>THE JOURNAL</span><span>IDEAS BEYOND THE BUILD</span>
+            </div>
+            <div class="journal-label">Field notes<span>01</span></div>
+            <p class="eyebrow red-ink">WORKPLACE &amp; CULTURE / 3 MIN READ</p>
+            <h2 class="journal-title">
+              The underrated<br />power of<br /><em
+                >action-based<br />communication.</em
+              >
+            </h2>
+            <div class="journal-rule"></div>
+            <p class="journal-excerpt">
+              After years of networking across industries, one pattern becomes
+              clear: action-based communication is one of the most underrated
+              yet powerful workplace skills.
+            </p>
+            <a
+              class="editorial-link"
+              href="blog/action-based-communication/index.html"
+              >Read the story <svg class="icon"><use href="#i-arrow" /></svg
+            ></a>
+            <div class="journal-byline">
+              <span>WORDS BY ANUSHEEL CHAPAGAIN</span
+              ><span>APRIL 22, 2025</span>
+            </div>
+            <a class="journal-all" href="blog/index.html"
+              >More from the journal ↗</a
+            >
+            <div class="page-folio">
+              <span>THE PORTFOLIO EDITION</span><span>10</span>
+            </div>
+          </article>
+        </section>
+        <section
+          class="spread"
+          id="spread-6"
+          data-title="The next chapter"
+          aria-label="Pages 11 and 12: Résumé and contact"
+        >
+          <article class="page resume-page">
+            <div class="running-head">
+              <span>05 / THE NEXT CHAPTER</span><span>THE FULL PICTURE</span>
+            </div>
+            <p class="eyebrow red-ink">THERE’S MORE TO THE STORY</p>
+            <h2 class="display-title">
+              The details<br />behind<br /><em>the work.</em>
+            </h2>
+            <p class="resume-intro">
+              The full résumé brings together the project context, technical
+              work, education and research behind this edition.
+            </p>
+            <a
+              class="resume-document"
+              href="anusheel-chapagain-general-resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Anusheel Chapagain's general résumé PDF"
+              ><span class="document-top"
+                >ANUSHEEL CHAPAGAIN<span>AC.</span></span
+              ><strong>Engineer. Data.<br />Product Development.</strong
+              ><span class="document-lines" aria-hidden="true"
+                ><i></i><i></i><i></i><i></i><i></i></span
+              ><span class="document-bottom"
+                >GENERAL RÉSUMÉ / PDF<svg class="icon">
+                  <use href="#i-link" /></svg></span
+            ></a>
+            <a
+              class="solid-link"
+              href="anusheel-chapagain-general-resume.pdf"
+              data-resume-download
+              download
+              >Download the résumé
+              <svg class="icon"><use href="#i-download" /></svg
+            ></a>
+            <div class="page-folio">
+              <span>ANUSHEEL CHAPAGAIN</span><span>11</span>
+            </div>
+          </article>
+          <article class="page contact-page">
+            <div class="running-head">
+              <span>THE CONVERSATION CONTINUES</span
+              ><span>END / BEGINNING</span>
+            </div>
+            <div class="contact-monogram" aria-hidden="true">
+              a<span>.</span>
+            </div>
+            <h2>What are<br />you <em>building?</em></h2>
+            <p>
+              Have a practical problem, an interesting idea,<br />or a project
+              worth talking about?<br />I’d like to hear it.
+            </p>
+            <a class="contact-email" href="mailto:chapagainanusheel@gmail.com"
+              >chapagainanusheel@gmail.com <span>↗</span></a
+            >
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/chapagainanusheel/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn ↗</a
+              ><a
+                href="https://github.com/anusheeel"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub ↗</a
+              ><a href="blog/index.html">Journal ↗</a>
+            </div>
+            <div class="contact-location">
+              <span class="live-dot"></span
+              ><span
+                >ST. JOHN’S, NEWFOUNDLAND AND LABRADOR<br />AUTHORIZED TO WORK
+                IN CANADA</span
+              >
+            </div>
+            <div class="page-folio">
+              <span>THANK YOU FOR READING.</span><span>12</span>
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="reader-bottom">
+        <div class="reader-caption">
+          <span id="section-label">Cover &amp; contents</span
+          ><span class="keyboard-hint">Use ← → to turn the page</span>
+        </div>
+        <nav class="reader-pagination" aria-label="Page navigation">
+          <button
+            class="page-nav previous"
+            type="button"
+            data-prev
+            aria-label="Previous spread"
+            disabled
+          >
+            <svg class="icon"><use href="#i-arrow" /></svg></button
+          ><span id="page-indicator" aria-live="off">01 — 02 / 12</span
+          ><button
+            class="page-nav"
+            type="button"
+            data-next
+            aria-label="Next spread"
+          >
+            <svg class="icon"><use href="#i-arrow" /></svg>
+          </button>
+        </nav>
+        <div class="spread-dots" aria-label="Choose a spread">
+          <button
+            data-spread="1"
+            type="button"
+            aria-label="Cover and contents"
+            aria-current="true"
+          ></button
+          ><button data-spread="2" type="button" aria-label="Profile"></button
+          ><button
+            data-spread="3"
+            type="button"
+            aria-label="Experience"
+          ></button
+          ><button
+            data-spread="4"
+            type="button"
+            aria-label="Selected work"
+          ></button
+          ><button
+            data-spread="5"
+            type="button"
+            aria-label="Research and ideas"
+          ></button
+          ><button
+            data-spread="6"
+            type="button"
+            aria-label="Contact and résumé"
+          ></button>
+        </div>
+      </div>
+      <p
+        id="reader-status"
+        class="sr-only"
+        role="status"
+        aria-live="polite"
+      ></p>
+      <noscript
+        ><p class="noscript-note">
+          You’re reading the complete edition. Scroll to explore every page.
+        </p></noscript
+      >
+    </main>
+    <footer class="site-footer">
+      <span>AN INDEPENDENT PORTFOLIO BY ANUSHEEL CHAPAGAIN</span
+      ><span class="activity-counts"
+        ><span><b id="visit-count">—</b> reads</span
+        ><span><b id="resume-download-count">—</b> résumé downloads</span></span
+      ><a
+        href="anusheel-chapagain-general-resume.pdf"
+        data-resume-download
+        download
+        >Get the résumé ↗</a
+      >
+    </footer>
+    <dialog id="contents-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-heading">
+        <p class="eyebrow red-ink">THE PORTFOLIO EDITION</p>
+        <button
+          id="contents-close"
+          class="tool-button icon-button"
+          type="button"
+          aria-label="Close contents"
+        >
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <h2 id="dialog-title">In this <em>issue.</em></h2>
+      <nav class="dialog-contents" aria-label="Jump to a chapter">
+        <a href="#spread-1" data-spread="1"
+          ><span>01—02</span>Cover &amp; contents <b>↗</b></a
+        ><a href="#spread-2" data-spread="2"
+          ><span>03—04</span>The person behind the work <b>↗</b></a
+        ><a href="#spread-3" data-spread="3"
+          ><span>05—06</span>Where the work happens <b>↗</b></a
+        ><a href="#spread-4" data-spread="4"
+          ><span>07—08</span>Ideas, made real <b>↗</b></a
+        ><a href="#spread-5" data-spread="5"
+          ><span>09—10</span>A curious mind at work <b>↗</b></a
+        ><a href="#spread-6" data-spread="6"
+          ><span>11—12</span>The next chapter <b>↗</b></a
+        >
+      </nav>
+      <p class="dialog-note">
+        A little about the person. A closer look at the work.
+      </p>
+    </dialog>
+  </body>
 </html>

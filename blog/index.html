@@ -1,124 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Anusheel Chapagain</title>
-    <meta name="description" content="Views, opinions, and observations from Anusheel Chapagain on engineering, work culture, and technology.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
-    <style>
-        .notepad {
-            max-width: 800px;
-        }
-
-        .blog-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .blog-list li {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #44475a;
-        }
-
-        .blog-list li:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .blog-list .post-title a {
-            color: #8be9fd;
-            font-size: 15px;
-            font-weight: 500;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .blog-list .post-title a:hover {
-            color: #ff79c6;
-            text-decoration: underline;
-        }
-
-        .blog-list .post-meta {
-            color: #6272a4;
-            font-size: 12px;
-            margin-top: 4px;
-        }
-
-        .blog-list .post-excerpt {
-            color: #f8f8f2;
-            font-size: 13px;
-            margin-top: 8px;
-            line-height: 1.6;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 24px;
-            color: #6272a4;
-            font-size: 13px;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .back-link:hover {
-            color: #ff79c6;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="notepad">
-        <div class="notepad-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="filename">blog/index.txt</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf8f2" />
+    <title>Perspectives — Anusheel Chapagain</title>
+    <meta
+      name="description"
+      content="Views, opinions, and observations from Anusheel Chapagain on engineering, work culture, and technology."
+    />
+    <link rel="stylesheet" href="editorial.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-top">
+        <a href="../index.html" class="back-link"
+          ><span aria-hidden="true">←</span> The magazine</a
+        ><span>The portfolio edition</span>
+      </div>
+      <a
+        class="masthead"
+        href="../index.html"
+        aria-label="Anusheel Chapagain magazine home"
+        >Anusheel<span class="masthead-period">.</span></a
+      >
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">The cover</a
+        ><a href="index.html" aria-current="page">Perspectives</a
+        ><a href="mailto:chapagainanusheel@gmail.com"
+          >Get in touch <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main" class="index-main">
+      <div class="section-heading">
+        <span class="eyebrow">The journal</span
+        ><span class="edition-note">Independent thinking</span>
+      </div>
+      <section class="section-intro" aria-labelledby="page-title">
+        <h1 id="page-title">Perspectives<span class="accent">.</span></h1>
+        <p>
+          Views and opinions on engineering,<br class="desktop-break" />
+          work culture, and technology.
+        </p>
+      </section>
+      <article class="featured-post">
+        <a
+          class="quote-art"
+          href="action-based-communication/index.html"
+          aria-label="Read The Underrated Power of Action-Based Communication"
+          ><span class="art-label">On the art of working together</span
+          ><span class="art-quote" aria-hidden="true"
+            >Less talk.<br />More<br /><em>momentum.</em></span
+          ><span class="art-bottom"
+            >A perspective by Anusheel Chapagain
+            <span aria-hidden="true">↗</span></span
+          ></a
+        >
+        <div class="feature-copy">
+          <div class="eyebrow accent">Workplace &amp; culture</div>
+          <h2>
+            <a href="action-based-communication/index.html"
+              >The Underrated Power of Action-Based Communication</a
+            >
+          </h2>
+          <p class="post-excerpt">
+            After years of networking across industries, one pattern becomes
+            clear: action-based communication is one of the most underrated yet
+            powerful workplace skills...
+          </p>
+          <div class="post-meta">
+            <time datetime="2025-04-22">April 22, 2025</time
+            ><span aria-hidden="true">·</span><span>3 min read</span>
+          </div>
+          <a class="read-link" href="action-based-communication/index.html"
+            >Read the story <span aria-hidden="true">↗</span></a
+          >
         </div>
-        <div class="notepad-content">
-            <pre>
-================================================================================
-                            BLOG — ANUSHEEL CHAPAGAIN
-================================================================================
-
-Views and opinions on engineering, work culture, and technology.
-
-<a href="../index.html" class="back-link">← back to main</a>
-
-================================================================================
-                                  POSTS
-================================================================================
-
-</pre>
-            <ul class="blog-list">
-                <li>
-                    <div class="post-title">
-                        <a href="action-based-communication/index.html">[1] The Underrated Power of Action-Based Communication</a>
-                    </div>
-                    <div class="post-meta">April 22, 2025 · 3 min read · workplace, culture</div>
-                    <div class="post-excerpt">
-                        After years of networking across industries, one pattern becomes clear: action-based
-                        communication is one of the most underrated yet powerful workplace skills...
-                    </div>
-                </li>
-            </ul>
-            <pre>
-
-================================================================================
-
-Contact:    <a href="mailto:chapagainanusheel@gmail.com">chapagainanusheel@gmail.com</a>
-
-================================================================================
-            </pre>
-        </div>
-    </div>
-</body>
-
+      </article>
+      <div class="journal-end">
+        <span>Thoughtful work starts with a conversation.</span
+        ><a href="mailto:chapagainanusheel@gmail.com"
+          >Let’s talk <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-brand" href="../index.html">Anusheel.</a
+      ><span>Engineering, with a point of view.</span
+      ><a href="mailto:chapagainanusheel@gmail.com"
+        >chapagainanusheel@gmail.com</a
+      >
+    </footer>
+  </body>
 </html>
